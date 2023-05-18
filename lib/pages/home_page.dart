@@ -22,7 +22,17 @@ class HomePage extends StatelessWidget {
               ),
               // height: 300,
               width: double.infinity,
-              color: Colors.blue,
+
+              decoration: BoxDecoration(
+                  gradient: LinearGradient(
+                begin: Alignment.topLeft,
+                end: Alignment.bottomRight,
+                colors: [
+                  Color(0xff0a494e),
+                  Color(0xff05172a),
+                ],
+              )),
+
               child: SafeArea(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
