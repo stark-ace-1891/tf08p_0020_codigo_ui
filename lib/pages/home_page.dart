@@ -22,17 +22,16 @@ class HomePage extends StatelessWidget {
               ),
               // height: 300,
               width: double.infinity,
-
               decoration: BoxDecoration(
-                  gradient: LinearGradient(
-                begin: Alignment.topLeft,
-                end: Alignment.bottomRight,
-                colors: [
-                  Color(0xff0a494e),
-                  Color(0xff05172a),
-                ],
-              )),
-
+                gradient: LinearGradient(
+                  begin: Alignment.topLeft,
+                  end: Alignment.bottomRight,
+                  colors: [
+                    Color(0xff0a494e),
+                    Color(0xff05172a),
+                  ],
+                ),
+              ),
               child: SafeArea(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -120,8 +119,15 @@ class HomePage extends StatelessWidget {
                         Container(
                           padding: EdgeInsets.all(15),
                           decoration: BoxDecoration(
-                            color: Color(0xffffb404),
                             borderRadius: BorderRadius.circular(12),
+                            gradient: LinearGradient(
+                              begin: Alignment.topLeft,
+                              end: Alignment.bottomRight,
+                              colors: [
+                                Colors.yellow,
+                                Colors.orange,
+                              ],
+                            ),
                           ),
                           child: Icon(
                             Icons.filter_alt_outlined,
