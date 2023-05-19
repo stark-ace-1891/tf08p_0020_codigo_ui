@@ -3,6 +3,7 @@ import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:tf08p_0020_codigo_ui/pages/constantes.dart';
+import 'package:tf08p_0020_codigo_ui/widget/item_history_widget.dart';
 import 'package:tf08p_0020_codigo_ui/widget/item_slider_widget.dart';
 
 class HomePage extends StatelessWidget {
@@ -212,6 +213,13 @@ class HomePage extends StatelessWidget {
                       ),
                     ],
                   ),
+                  SizedBox(
+                    height: 12,
+                  ),
+                  ItemHistoryWidget(),
+                  ItemHistoryWidget(),
+                  ItemHistoryWidget(),
+                  ItemHistoryWidget(),
                 ],
               ),
             ),
